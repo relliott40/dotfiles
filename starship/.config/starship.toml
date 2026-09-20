@@ -1,4 +1,4 @@
-format = "$directory$git_branch$python$git_status\n$character"
+format = "$directory$git_branch$git_status$python$kubernetes\n$character"
 add_newline = false
 
 [directory]
@@ -6,6 +6,10 @@ truncation_length = 3
 
 [git_branch]
 symbol = " "
+
+[kubernetes]
+disabled = false
+format = " ☸ [$context](blue)"
 
 [python]
 format = "[\\($virtualenv\\)]($style) "
