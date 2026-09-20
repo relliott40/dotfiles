@@ -1,0 +1,46 @@
+# herdr configuration
+onboarding = false                             # skip first-run setup prompt
+
+[terminal]
+new_cwd = "follow"                             # new panes/tabs inherit the cwd
+
+[keys]
+prefix = "ctrl+b"                              # tmux: C-b
+
+# --- session ---------------------------------------------------------------
+detach = "prefix+d"
+help = "prefix+?"
+settings = "prefix+t"
+
+# --- tabs ------------------------------------------------------------------
+new_tab = "prefix+c"
+next_tab = ["prefix+n", "alt+shift+l"]
+previous_tab = ["prefix+p", "alt+shift+h"]
+switch_tab = "prefix+1..9"
+rename_tab = "prefix+comma"
+close_tab = "prefix+ampersand"
+
+# --- workspaces --------------------------
+workspace_picker = ["prefix+s", "prefix+w"]
+switch_workspace = "prefix+shift+1..9"
+
+navigate_workspace_up = ["up", "k"]
+navigate_workspace_down = ["down", "j"]
+
+# --- panes -----------------------------------------------------------------
+split_vertical = "prefix+percent"
+split_horizontal = "prefix+quote"
+close_pane = "prefix+x"
+zoom = "prefix+z"
+resize_mode = "prefix+r"
+
+focus_pane_left = ["prefix+h", "alt+h"]
+focus_pane_down = ["prefix+j", "alt+j"]
+focus_pane_up = ["prefix+k", "alt+k"]
+focus_pane_right = ["prefix+l", "alt+l"]
+
+[ui]
+tab_bar_position = "bottom"
+pane_outer_borders = false
+pane_gaps = false
+prompt_new_tab_name = false
