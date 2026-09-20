@@ -44,3 +44,7 @@ tab_bar_position = "bottom"
 pane_outer_borders = false
 pane_gaps = false
 prompt_new_tab_name = false
+
+[theme]
+name = "rose-pine"
+auto_switch = false
