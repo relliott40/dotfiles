@@ -21,15 +21,16 @@ rename_tab = "prefix+comma"
 close_tab = "prefix+ampersand"
 
 # --- workspaces --------------------------
-workspace_picker = ["prefix+s", "prefix+w"]
+workspace_picker = "prefix+s" 
 switch_workspace = "prefix+shift+1..9"
+open_worktree = "prefix+w"
 
 navigate_workspace_up = ["up", "k"]
 navigate_workspace_down = ["down", "j"]
 
 # --- panes -----------------------------------------------------------------
 split_vertical = "prefix+percent"
-split_horizontal = "prefix+quote"
+split_horizontal = ["prefix+shift+quote", "prefix+quote"]
 close_pane = "prefix+x"
 zoom = "prefix+z"
 resize_mode = "prefix+r"
@@ -48,3 +49,10 @@ prompt_new_tab_name = false
 [theme]
 name = "rose-pine"
 auto_switch = false
+agent_panel_sort = "priority"
+
+[ui.toast]
+delivery = "system"
+
+[ui.sound]
+enabled = true
