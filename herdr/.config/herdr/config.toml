@@ -45,11 +45,11 @@ tab_bar_position = "bottom"
 pane_outer_borders = false
 pane_gaps = false
 prompt_new_tab_name = false
+agent_panel_sort = "priority"
 
 [theme]
 name = "rose-pine"
 auto_switch = false
-agent_panel_sort = "priority"
 
 [ui.toast]
 delivery = "system"
